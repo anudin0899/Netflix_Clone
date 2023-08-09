@@ -1,0 +1,152 @@
+@import '../../StyleHelpers/Variables.scss';
+
+.Header {
+  height: 80px;
+  line-height: 10vh;
+  //background-image: linear-gradient(to right bottom, rgba(0, 0, 0, 0.9), rgba(0, 0, 0, 0.9),rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.5), rgba(0, 0, 0));
+  color: #fff;
+  background-color: #111;
+  overflow: hidden;
+  display: flex;
+  align-items: center;
+  position: fixed;
+  width: 100%;
+  z-index: 999;
+
+  .container {
+    max-width: 90%;
+    margin: auto;
+    display: flex;
+    flex: 1;
+    justify-content: center;
+    align-items: center;
+
+
+    @include LargeScreen {
+      max-width: 100%;
+      margin: 0 20px;
+    }
+
+    .wrapper {
+      display: flex;
+      flex: 1;
+      justify-content: space-between;
+      align-items: center;
+
+      .flexSB {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @include breakpoint(md) {
+          display: none;
+        }
+
+        @include mediumScreen() {
+          display: none;
+        }
+      }
+
+      .logo {
+        display: flex;
+        align-items: center;
+
+        img {
+          width: 150px;
+          height: 35px;
+          margin-top: 10px;
+          margin-right: 30px;
+
+          @include breakpoint(md) {
+            width: 120px;
+            height: 30px;
+          }
+        }
+      }
+
+      a {
+        color: #fff;
+        margin-left: 20px;
+      }
+
+
+
+      i {
+        quotes: 40px;
+        height: 40px;
+        padding: 10px;
+        text-align: center;
+        border-radius: 50%;
+        border: 2px solid #fff;
+        margin: 0 10px;
+        display: flex;
+        align-items: center;
+      }
+
+      button {
+        border-radius: 25px;
+        font-size: 15px;
+        font-weight: bold;
+      }
+
+      .navMenu_list {
+        display: flex;
+
+        @include breakpoint(md) {
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #e50813;
+          width: 50%;
+          height: 100vh;
+          z-index: 999;
+        }
+
+        @include mediumScreen() {
+          flex-direction: column;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #e50813;
+          width: 50%;
+          height: 100vh;
+          z-index: 999;
+        }
+
+        li {
+          margin-top: 10px;
+          padding: 0 20px;
+          border-bottom: 1px solid #fff;
+        }
+
+      }
+    }
+
+    .toggle {
+      display: none;
+
+      @include breakpoint(md) {
+        display: block;
+        background-color: transparent;
+      }
+
+      @include mediumScreen() {
+        display: block;
+        background-color: transparent;
+      }
+    }
+
+    .account {
+      display: flex;
+
+      @include breakpoint(md) {
+        display: none;
+      }
+
+      @include mediumScreen() {
+        display: none;
+      }
+    }
+  }
+}

@@ -1,0 +1,22 @@
+.home {
+  display: flex;
+  flex-direction: column;
+}
+.home .margin {
+  margin-top: 50%;
+}
+@media (max-width: 550px) {
+  .home .margin {
+    margin-top: 50% !important;
+  }
+}
+@media (min-width: 550px) and (max-width: 768px) {
+  .home .margin {
+    margin-top: 30% !important;
+  }
+}
+@media (min-width: 900px) and (max-width: 1024px) {
+  .home .margin {
+    margin-top: 60% !important;
+  }
+}/*# sourceMappingURL=index.module.css.map */

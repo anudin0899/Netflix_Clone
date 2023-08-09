@@ -1,0 +1,57 @@
+@import '../../StyleHelpers/Variables.scss';
+
+.home_wrapper {
+    position: absolute;
+    top: 0;
+    left: 0;
+    //height: 100vh;
+    width: 100%;
+    color: #fff;
+
+
+    @include breakpoint(md) {
+        position: relative;
+        margin: 0;
+        //height: 60vh !important;
+    }
+
+    @include mediumScreen() {
+        position: relative;
+        margin: 0;
+        height: 60vh !important;
+    }
+
+
+    .homeContainer {
+        position: relative;
+
+        /*---------------control-btn-------------*/
+        .control_btn {
+            button {
+                background: none;
+                border: 2px solid rgba(255, 255, 255, 0.3);
+                padding: 0;
+                width: 50px;
+                height: 50px;
+                border-radius: 50%;
+                cursor: pointer;
+            }
+
+            .next {
+                position: absolute;
+                top: 50%;
+                right: 2%;
+            }
+
+            .prev {
+                position: absolute;
+                top: 50%;
+                left: 2%;
+                z-index: 99;
+            }
+        }
+
+        /*---------------control-btn-------------*/
+
+    }
+}

@@ -1,0 +1,29 @@
+.trending {
+  margin-top: 50px;
+}
+.trending .container {
+  max-width: 90%;
+  margin: auto;
+  /*---------------control-btn-------------*/
+  /*---------------control-btn-------------*/
+}
+.trending .container .control_btn button {
+  background: none;
+  border: 2px solid rgba(255, 255, 255, 0.3);
+  padding: 0;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.trending .container .control_btn .next {
+  position: absolute;
+  top: 45%;
+  right: 2%;
+}
+.trending .container .control_btn .prev {
+  position: absolute;
+  top: 45%;
+  left: 2%;
+  z-index: 99;
+}/*# sourceMappingURL=index.module.css.map */
