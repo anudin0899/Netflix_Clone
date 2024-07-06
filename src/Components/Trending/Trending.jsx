@@ -36,12 +36,10 @@ const Trending = ({ fetchUrl }) => {
 
     useEffect(() => {
         axios.get(fetchUrl).then((Response) => {
-            console.log(Response.data.results, "tred");
             setMovies(Response.data.results)
         })
     }, [fetchUrl]);
 
-    // console.log(movie, "trending");
 
     const settings = {
         dots: false,
