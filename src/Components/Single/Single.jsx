@@ -7,8 +7,6 @@ import YouTube from 'react-youtube'
 
 const Single = ({ item, rec }) => {
 
-  console.log(item, "single ");
-
   const opts = {
     height: '500',
     width: '100%',
