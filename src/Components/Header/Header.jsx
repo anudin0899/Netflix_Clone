@@ -15,7 +15,8 @@ const Header = () => {
             <div className={Style.container}>
                 <div className={Style.wrapper}>
                     <div className={Style.logo}>
-                        <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netfix" />
+                        <h2>Movie Store</h2>
+{/*                         <img className='logo' src="https://upload.wikimedia.org/wikipedia/commons/thumb/0/08/Netflix_2015_logo.svg/1920px-Netflix_2015_logo.svg.png" alt="Netfix" /> */}
                     </div>
                     <ul className={Mobile ? Style.navMenu_list : Style.flexSB} onClick={() => SetMobile(true)}>
                         <li><Link to='/'>Home</Link></li>
